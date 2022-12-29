@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h3>how many operators do we have in js</h3>
+    <p>Java script has four types of operators those are :</p>
+    <ol>
+        <li>Arithematic operators</li>
+        <li>Comparison operators</li>
+        <li>Assignment operators</li>
+        <li>Logical operators</li>
+    </ol>
+   
+    <h3>2. What are arrow functions?</h3>
+    <span>Arrow function is the newest feature introduced in ES6 version of JS, to write simple and manageable code that is easy to debug and understand</span>
+    <pre>
+        let z=((x,y)=>{
+            result=x*y;
+            return result;
+           })
+           let result1=z(10,5);
+           console.log(result1)
+    </pre>
+    
+    <h3>3. Difference between undefined vs not defined vs NaN.</h3>
+         <li>Undefined is a datatype in JS which means a variable is declared but its value is not specified. It is also the default value of a variable declared using 'var' upon hoisting.</li>
+        <li>Not defined is shown on the console when a variable is used for something but it was never declared.</li>
+        <li>NAN stands for 'not a number' which is the value given to a number if it contains alphabets or any special character.</li>
+        <h3>4.what is callback hell</h3>
+        <p>It is a function that will be executed after the execution of its parent function. It also forms pyramid like structure that is difficult to understand and debug. We should avoid using callback hell as much as possible.</p>
+        <pre>
+            function print(){
+                setTimeout(()=>{
+                    console.log("pavan1")
+                    setTimeout(()=>{
+                        console.log("nithin")
+                        setTimeout(()=>{
+                            console.log("prakash")
+                            setTimeout(()=>{
+                                console.log("bhanu")
+                            },1000)
+                        },2000)
+                    },3000)
+                },4000)
+               }
+               print();
+        </pre>
+        <h3>please explain self invoking function and its code</h3>
+        <pre>
+            
+        </pre>
+
+        <h3>6.What is the use of setTimeout?</h3>
+        <span>setTimeout is used to excute the code after the specified duration or settimeout method that executes the function or statement after given period of time</span>
+        <pre>
+            setTimeout(() => {
+                console.log("pavan timeout")   
+               }, 6000)
+           
+        </pre>
+    <script src="./main.js"></script>
+</body>
+</html>
